@@ -35,7 +35,7 @@
         {
             if (Price < 0 || Price >= 1200)
             {
-                throw new ArgumentException("price is not between 0 & 1200");
+                throw new ArgumentOutOfRangeException("price is not between 0 & 1200");
             }
         }
     }
