@@ -14,7 +14,7 @@ namespace BookLib.Tests
         [TestMethod()]
         public void ValidateNameTest()
         {
-            Book harryBlobber = new Book("harry Blobber & the white man", 500);
+            Book harryBlobber = new Book("hive", 500);
             Assert.IsNotNull(harryBlobber);
             Assert.IsInstanceOfType(harryBlobber, typeof(Book));
         }
@@ -22,7 +22,7 @@ namespace BookLib.Tests
         [TestMethod()]
         public void ValidateNameToShort()
         {
-            Book harryBlobber = new Book("HP", 500);
+            Book harryBlobber = new Book("HPv", 500);
             Assert.ThrowsException<ArgumentException>(() => harryBlobber.ValidateName());
         }
 

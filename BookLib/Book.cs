@@ -25,7 +25,7 @@
             {
                 throw new ArgumentNullException("name is null or empty");
             }
-            if (Name.Count() < 3)
+            if (Name.Count() < 4)
             {
                 throw new ArgumentException("name of book is to short");
             }
